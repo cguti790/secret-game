@@ -39,6 +39,7 @@ function verificarIntento() {
     console.log(`NU:${numUsuario}`);
         
     if (numSecreto === numUsuario){
+        asignarTextoElemento('h1','Muy Bien!');
         asignarTextoElemento('p',`Ganaste en ${intentos} ${(intentos === 1)? 'intento':'intentos'}!`);
         document.querySelector('#reiniciar').removeAttribute('disabled');
         
